@@ -111,3 +111,79 @@ header > div > div > a > img{
     width: 16px;
     height: 16px;
 }
+
+/* ==============================================
+=================================================
+                    MAIN
+=================================================
+================================================= */
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+/* ==============================================
+=================================================
+                    ASIDE
+=================================================
+================================================= */
+
+main aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background-color: #e3e3e3;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+main aside section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 260px;
+    padding-right: 10px;
+}
+aside section:first-of-type p:nth-of-type(-n+2) span::after{
+    content : "\2605 \2605 \2BEA \2606 \2606";
+    color: #17abb3;
+    font-size: 21.5px;
+}
+aside section:first-of-type p:nth-of-type(n+3) span::after{
+    content : "\2606 \2606 \2606 \2606 \2606";
+    color: #17abb3;
+    font-size: 21.5px;
+}
+aside section:nth-of-type(-n+2) p{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+aside section:nth-of-type(-n+2) span:first-of-type,
+aside section:nth-of-type(-n+2) em{
+    font-weight: bold;
+}
+aside section:nth-of-type(n+3) p::before{
+    content : "\2BC0";
+    color: #17abb3;
+}
+aside section:nth-of-type(n+3) p{
+    width: 150px;    
+    margin-top: 4px;
+    margin-bottom: 3px ;
+    line-height: 16px;
+}
+aside section:nth-of-type(n+3) span{
+    padding-left: 10px;
+}
+aside section:first-of-type p{    
+    margin-top: 5px;
+    margin-bottom: 6px ;
+    line-height: 16px;
+}
+aside section:nth-of-type(2) p{    
+    margin-top: 7px;
+    margin-bottom: 7px ;
+    line-height: 15px;
+}
