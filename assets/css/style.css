@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url(./header.css);
+@import url(./aside.css);
+@import url(./content.css);
+@import url(./footer.css);
+@import url(./animation.css);
 *{
     box-sizing: border-box;
 }
@@ -58,60 +62,6 @@ h3{
 em{
     font-style: initial;
 }
-
-/* ==============================================
-=================================================
-                    HEADER
-=================================================
-================================================= */
-
-header{
-    display: flex;
-    flex-direction: row;
-    width: 1160px;
-    height: 240px;
-    background-color: #17abb3;
-}
-header > a{
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-}
-header > a img{
-    width: 145px;
-    height: 145px;
-    border-radius: 50%;
-    border: 5px solid #ffffff;
-}
-header > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 810px;
-}
-header > div > div{
-    display: flex;
-    align-items: center;
-    width: 280px;
-    height: 30px;
-}
-header > div > div > a,
-header > div > div > span{
-    display: flex;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    color: #ffffff;
-    text-indent: 15px;
-    text-decoration: none;
-}
-header > div > div > span > img,
-header > div > div > a > img{
-    width: 16px;
-    height: 16px;
-}
-
 /* ==============================================
 =================================================
                     MAIN
@@ -122,189 +72,9 @@ main{
     display: flex;
     flex-direction: row;
 }
-/* ==============================================
-=================================================
-                    ASIDE
-=================================================
-================================================= */
 
-main aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-    background-color: #e3e3e3;
-    padding-top: 25px;
-    padding-bottom: 60px;
-}
-main aside section{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 260px;
-    padding-right: 10px;
-}
-aside section:first-of-type p:nth-of-type(-n+2) span::after{
-    content : "\2605 \2605 \2BEA \2606 \2606";
-    color: #17abb3;
-    font-size: 21.5px;
-}
-aside section:first-of-type p:nth-of-type(n+3) span::after{
-    content : "\2606 \2606 \2606 \2606 \2606";
-    color: #17abb3;
-    font-size: 21.5px;
-}
-aside section:nth-of-type(-n+2) p{
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-aside section:nth-of-type(-n+2) span:first-of-type,
-aside section:nth-of-type(-n+2) em{
-    font-weight: bold;
-}
-aside section:nth-of-type(n+3) p::before{
-    content : "\2BC0";
-    color: #17abb3;
-}
-aside section:nth-of-type(n+3) p{
-    width: 150px;    
-    margin-top: 4px;
-    margin-bottom: 3px ;
-    line-height: 16px;
-}
-aside section:nth-of-type(n+3) span{
-    padding-left: 10px;
-}
-aside section:first-of-type p{    
-    margin-top: 5px;
-    margin-bottom: 6px ;
-    line-height: 16px;
-}
-aside section:nth-of-type(2) p{    
-    margin-top: 7px;
-    margin-bottom: 7px ;
-    line-height: 15px;
-}
-/* ==============================================
-=================================================
-                    Content
-=================================================
-================================================= */
 
-main > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 810px;
-    padding-top: 25px;
-    padding-bottom: 60px;
-}
-main > div article,
-main > div section{
-    display: flex;
-    flex-direction: column;
-    width: 710px;
-}
-main > div h3{
-    margin-bottom: 5px;
-}
-main > div article p{
-    margin-bottom: 0;
-    text-indent: 20px;
-    text-align: justify;
-}
-main > div section div  span:first-of-type,
-main > div section span:first-of-type{
-    font-weight: bold;    
-    margin-top: 1px;
-}
-main > div > section > div  p:nth-of-type(odd),
-main > div > section  p:nth-of-type(odd){
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 710px;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-main > div section > div  p:nth-of-type(even),
-main > div section  p:nth-of-type(even){
-    width: 710px;
-    margin-top: -3px;
-    font-size: smaller;
-    font-style: italic;
-}
-main > div section > div  p:first-of-type{
-    margin-top: 18px;
-}
-main > div section > div  p:last-of-type,
-main > div section  p:last-of-type{
-    margin-bottom: 0px;
-}
-main > div > section > div > p span:last-of-type,
-main > div > section > p span:last-of-type{
-    color: #17abb3;
-}
 
-/* ==============================================
-=================================================
-                    Footer
-=================================================
-================================================= */
 
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 1160px;
-    height: 85px;
-    background-color: #17abb3;
-}
-footer > div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 160px;
-    margin-top: 10px;
-}
-footer > div > a{
-    width: 24px;
-    height: 24px;
-}
-footer > p{
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-size: small;
-    font-style: italic;
-    color: #ffffff;
-}
-/* ==============================================
-=================================================
-                    Animation
-=================================================
-================================================= */
 
-header > a img:hover{
-    cursor: zoom-in;
-}
-main > div > section:first-of-type > div:hover p:first-of-type{
-    border-left: 5px solid #17abb3;
-    background-color: #f5f5f5;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-}
-main > div > section:first-of-type > div:hover p:last-of-type{
-    border-left: 5px solid #17abb3;
-    background-color: #f5f5f5;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-footer > div img:hover{
-    opacity: 70%;
-}
+

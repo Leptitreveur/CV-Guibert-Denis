@@ -1,0 +1,52 @@
+/* ==============================================
+=================================================
+                    HEADER
+=================================================
+================================================= */
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 1160px;
+    height: 240px;
+    background-color: #17abb3;
+}
+header > a{
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+header > a img{
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+header > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+}
+header > div > div{
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 30px;
+}
+header > div > div > a,
+header > div > div > span{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    color: #ffffff;
+    text-indent: 15px;
+    text-decoration: none;
+}
+header > div > div > span > img,
+header > div > div > a > img{
+    width: 16px;
+    height: 16px;
+}
