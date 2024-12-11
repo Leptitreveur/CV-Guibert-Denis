@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html{
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway",Arial,serif;
+    background-color: #f5f5f5;
+}
+body{
+    width: 1160px;
+    background-color: #ffffff;
+}
+h1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", Arial, sans-serif;
+}
+h2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", Arial, sans-serif;
+}
+h3{
+    width: 100%;
+    height: 100%;
+    font-family: "Lato", Arial, sans-serif;
+}
+a{
+    display: flex;
+    pointer-events: none;
+}
+img{
+    pointer-events: initial;
+}
+h1{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 55px;
+}
+h2{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+}
+h3{
+    border-bottom: 2px solid #33333320;
+    color: #17abb3;
+    padding-bottom: 10px;
+    font-size : 25px;
+    margin-bottom: 18px;
+}
+em{
+    font-style: initial;
+}
+
+/* ==============================================
+=================================================
+                    HEADER
+=================================================
+================================================= */
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 1160px;
+    height: 240px;
+    background-color: #17abb3;
+}
+header > a{
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+header > a img{
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+header > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 810px;
+}
+header > div > div{
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 30px;
+}
+header > div > div > a,
+header > div > div > span{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    color: #ffffff;
+    text-indent: 15px;
+    text-decoration: none;
+}
+header > div > div > span > img,
+header > div > div > a > img{
+    width: 16px;
+    height: 16px;
+}
